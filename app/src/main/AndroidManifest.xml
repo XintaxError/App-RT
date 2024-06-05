@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_logo_vector" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/color_new_blue" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <activity android:name=".LandingPageActivity"
+            android:exported="false" />
+        <activity android:name=".RegisterActivity"
+            android:exported="false"/>
+        <activity android:name=".LoginActivity"
+            android:exported="false"/>
+
+        <!-- User -->
+        <activity android:name=".User.MainActivity"
+            android:exported="false"/>
+        <activity android:name=".User.ProfilActivity"
+            android:exported="false"/>
+        <activity android:name=".User.ProfilEditActivity"
+            android:exported="false"/>
+        <activity android:name=".User.KegiatanActivity"
+            android:exported="false"/>
+        <activity android:name=".User.KegiatanDetailActivity"
+            android:exported="true"/>
+        <activity android:name=".User.LaporanActivity"
+            android:exported="false"/>
+        <activity android:name=".User.LaporanDetailActivity"
+            android:exported="false"/>
+        <activity android:name=".User.KeluhanActivity"
+            android:exported="false"/>
+
+        <!-- Admin -->
+        <activity android:name=".Admin.MainActivity"
+            android:exported="false"/>
+        <activity android:name=".Admin.KegiatanActivity"
+            android:exported="false"/>
+        <activity android:name=".Admin.LaporanActivity"
+            android:exported="false"/>
+        <activity android:name=".Admin.KeluhanActivity"
+            android:exported="false"/>
+        <activity android:name=".Admin.KegiatanTambahActivity"
+            android:exported="false"/>
+        <activity android:name=".Admin.LaporanTambahActivity"
+            android:exported="false"/>
+        <activity android:name=".Admin.PenggunaActivity"
+            android:exported="false"/>
+        <activity android:name=".Admin.KeluhanDetailActivity"
+            android:exported="false"/>
+        <activity android:name=".Admin.LaporanDetailActivity"
+            android:exported="false"/>
+        <activity android:name=".Admin.KegiatanDetailActivity"
+            android:exported="false"/>
+        <activity android:name=".Admin.PenggunaDetailActivity"
+            android:exported="false"/>
+        <activity android:name=".Admin.KegiatanEditActivity"
+            android:exported="false"/>
+        <activity android:name=".Admin.LaporanEditActivity"
+            android:exported="false"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
