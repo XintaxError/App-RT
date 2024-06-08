@@ -20,3 +20,6 @@ RT Elektronik Mobile adalah solusi praktis dan efektif untuk memperkuat komunika
 
 ### Note...!!!
 <h4>Membutuhkan minimal API level 26 (Android 8.0)</h4>
+
+File Laporan :
+https://drive.google.com/drive/folders/1TFGjkOGvu5J_O7-JOLunPzIvzZd1hM3Z?usp=sharing
