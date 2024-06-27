@@ -2,7 +2,7 @@ package com.rian.apprt
 
 class UrlClass {
 
-    val local = "http://192.168.100.15/api_ert/"
+    val local = "http://192.168.1.9/api_ert/"
 
     // crud_validasi.php
     val validasi = local + "validasi.php"

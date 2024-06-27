@@ -1,6 +1,7 @@
 pluginManagement {
     repositories {
         google()
+        jcenter()
         mavenCentral()
         gradlePluginPortal()
     }
@@ -14,6 +15,9 @@ dependencyResolutionManagement {
         maven {
             url = uri ("https://jitpack.io/")
             isAllowInsecureProtocol = true
+        }
+        maven{
+            url = uri ("https://jcenter.bintray.com/")
         }
     }
 }

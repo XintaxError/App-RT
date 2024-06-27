@@ -295,51 +295,51 @@ class MainActivity : AppCompatActivity() {
         b.chartLineKeuangan.animateXY(3000, 3000)
     }
 
-/*
-    fun setLineChartData() {
-        val xvalue = ArrayList<String>()
-        xvalue.add("11.00 AM")
-        xvalue.add("12.00 AM")
-        xvalue.add("1.00 AM")
-        xvalue.add("3.00 PM")
-        xvalue.add("7.00 PM")
+    /*
+        fun setLineChartData() {
+            val xvalue = ArrayList<String>()
+            xvalue.add("11.00 AM")
+            xvalue.add("12.00 AM")
+            xvalue.add("1.00 AM")
+            xvalue.add("3.00 PM")
+            xvalue.add("7.00 PM")
 
-        val lineentry = ArrayList<Entry>();
-        lineentry.add(Entry(210f, 0))
-        lineentry.add(Entry(50f, 1))
-        lineentry.add(Entry(60f, 2))
-        lineentry.add(Entry(30f, 3))
-        lineentry.add(Entry(10f, 4))
+            val lineentry = ArrayList<Entry>();
+            lineentry.add(Entry(210f, 0))
+            lineentry.add(Entry(50f, 1))
+            lineentry.add(Entry(60f, 2))
+            lineentry.add(Entry(30f, 3))
+            lineentry.add(Entry(10f, 4))
 
-        val lineentry1 = ArrayList<Entry>();
-        lineentry1.add(Entry(10f, 0))
-        lineentry1.add(Entry(40f, 1))
-        lineentry1.add(Entry(30f, 2))
-        lineentry1.add(Entry(50f, 3))
-        lineentry1.add(Entry(70f, 4))
+            val lineentry1 = ArrayList<Entry>();
+            lineentry1.add(Entry(10f, 0))
+            lineentry1.add(Entry(40f, 1))
+            lineentry1.add(Entry(30f, 2))
+            lineentry1.add(Entry(50f, 3))
+            lineentry1.add(Entry(70f, 4))
 
-        val linedataset = LineDataSet(lineentry, "First")
-        linedataset.color = resources.getColor(R.color.colorAccent)
+            val linedataset = LineDataSet(lineentry, "First")
+            linedataset.color = resources.getColor(R.color.colorAccent)
 
-        val linedataset1 = LineDataSet(lineentry1, "Second")
-        linedataset1.color = resources.getColor(R.color.black)
-
-
-        linedataset.circleRadius = 0f
-        linedataset.setDrawFilled(true)
-        linedataset.fillColor = resources.getColor(R.color.colorPrimaryDark)
-        linedataset.fillAlpha = 30
+            val linedataset1 = LineDataSet(lineentry1, "Second")
+            linedataset1.color = resources.getColor(R.color.black)
 
 
-        val finaldataset = ArrayList<LineDataSet>()
-        finaldataset.add(linedataset)
-        finaldataset.add(linedataset1)
+            linedataset.circleRadius = 0f
+            linedataset.setDrawFilled(true)
+            linedataset.fillColor = resources.getColor(R.color.colorPrimaryDark)
+            linedataset.fillAlpha = 30
 
-        val data = LineData(xvalue, finaldataset as List<ILineDataSet>?)
-        b.chartLine.data = data
-        b.chartLine.setBackgroundColor(resources.getColor(R.color.white))
-        b.chartLine.animateXY(3000, 3000)
-    }
 
-     */
+            val finaldataset = ArrayList<LineDataSet>()
+            finaldataset.add(linedataset)
+            finaldataset.add(linedataset1)
+
+            val data = LineData(xvalue, finaldataset as List<ILineDataSet>?)
+            b.chartLine.data = data
+            b.chartLine.setBackgroundColor(resources.getColor(R.color.white))
+            b.chartLine.animateXY(3000, 3000)
+        }
+
+         */
 }
